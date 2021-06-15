@@ -18,7 +18,10 @@ function App() {
             <Route path="/" component={HomeUI} exact />
             <Route path="/search/:keyword" component={HomeUI} />
             <Route path="/product/:id" component={ProductUI} />
-            <Route path="/category/:categoryKeyword" component={ProductsInCategoryUI}></Route>
+            <Route
+              path="/category/:categoryKeyword"
+              component={ProductsInCategoryUI}
+            ></Route>
           </Container>
         </main>
         <Footer />
