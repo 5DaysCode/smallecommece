@@ -8,6 +8,8 @@ import HomeUI from "./UI/HomeUI.js";
 import ProductsInCategoryUI from "./UI/ProductsInCategoryUI.js";
 import ProductUI from "./UI/ProductUI.js";
 
+import "../src/sass/main.scss";
+
 function App() {
   return (
     <Router>
