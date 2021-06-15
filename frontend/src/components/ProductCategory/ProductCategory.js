@@ -8,8 +8,26 @@ const ProductCategory = ({ category, history }) => {
   const [categoryKeyword, setKeyword] = useState("");
 
   return (
-    <Container>
-      <Row>
+    <>
+      <div className="category-features">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Explore the world
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus expedita ea corporis perspiciatis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+
+    /* <Row>
         <Col className=".col-xs-6 .col-sm-3">
           <Card>
         
@@ -36,8 +54,8 @@ const ProductCategory = ({ category, history }) => {
           </Card>
         </Col>
         <Col></Col>
-      </Row>
-    </Container>
+      </Row> */
+    // </Container>
   );
 };
 
