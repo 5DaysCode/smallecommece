@@ -38,26 +38,27 @@ const HomeUI = ({ match }) => {
 
       <div className="mt-5">
         <h1>Our Categorys</h1>
-        <p>Test</p>
+
         <Row>
           {categorys.map((category) => (
             <Col key={category.name} className="btn-container">
               <ProductCategory category={category} />
-            
             </Col>
           ))}
         </Row>
       </div>
-      <h1>Latest Product's</h1>
 
-      <Row>
-        {products.map((product) => (
-          <Col key={product._id} sm={12} md={6} lg={4}>
-            <Product product={product} />
-       
-          </Col>
-        ))}
-      </Row>
+      <div className="mt-5">
+        <h1>Latest Product's</h1>
+
+        <Row>
+          {products.map((product) => (
+            <Col key={product._id} sm={12} md={6} lg={4}>
+              <Product product={product} />
+            </Col>
+          ))}
+        </Row>
+      </div>
     </>
   );
 };

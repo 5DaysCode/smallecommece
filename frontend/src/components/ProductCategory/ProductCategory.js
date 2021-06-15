@@ -14,9 +14,11 @@ const ProductCategory = ({ category, history }) => {
           <Col className=".col-xs-6 .col-sm-3">
             <div class="category-box">
               <h3 class="heading-tertiary u-margin-bottom-small">
-                <Link to={`/category/${category.name}`}>
-                  <strong>{category.name}</strong>
-                </Link>
+                <div className="link-p">
+                  <Link to={`/category/${category.name}`}>
+                    <strong>{category.name}</strong>
+                  </Link>
+                </div>
               </h3>
               <p class="feature-box__text"></p>
             </div>

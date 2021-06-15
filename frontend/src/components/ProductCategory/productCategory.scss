@@ -8,18 +8,9 @@
   transition: transform 0.3s;
   height: 20vh;
 
-  &__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    display: inline-block;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    -webkit-background-clip: text;
-    color: transparent;
+  .link-p {
+    margin: 0 0 0 192px;
+    padding: 49px 0 0 0;
   }
 
   &:hover {
