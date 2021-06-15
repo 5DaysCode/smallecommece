@@ -5,16 +5,16 @@ And is not responsive future work pending ...
 
 ### Install Dependencies (frontend & backend)
 
-npm install
-cd frontend
+npm install  
+cd frontend  
 npm install
 
 ### Running project
 
--- For running both frontend and backend use folowing command
+-- For running both frontend and backend use folowing command  
 npm run dev
 
--- For running backend only use following command
+-- For running backend only use following command  
 npm run server
 
 ### Seed Database
