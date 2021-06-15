@@ -7,12 +7,16 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
   height: 20vh;
+  background-color: #f0ad4e;
 
   .link-p {
     margin: 0 0 0 192px;
     padding: 49px 0 0 0;
   }
 
+  a {
+    color: $color-white;
+  }
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
