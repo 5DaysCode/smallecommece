@@ -32,6 +32,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(
   PORT,
   console.log(
-    `Visma e-commerce server is runing  in  ${process.env.NODE_ENV} mode on port ${PORT}`
+    `Small e-commerce server is runing  in  ${process.env.NODE_ENV} mode on port ${PORT}`
   )
 );
