@@ -4,7 +4,7 @@ import connectDB from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
 import topratedRoutes from "./routes/topratedProducts.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
-import bodyparser from "body-parser";
+
 
 dotenv.config();
 connectDB();
