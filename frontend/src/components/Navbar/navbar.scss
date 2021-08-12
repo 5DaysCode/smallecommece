@@ -1,0 +1,48 @@
+@import "../../sass/abstracts/variables";
+
+.navbarcomponent {
+  border-bottom: 1px solid $color-orange-dark;
+  cursor: pointer;
+  background-color: $color-black;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  color: $color-white;
+
+  svg {
+    width: 1.5rem;
+    fill: $color-white;
+    font-size: 1.9rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem;
+
+    li {
+      list-style: none;
+      display: block;
+      position: relative;
+      left: 0;
+
+      &:first-child {
+        margin-right: auto;
+        display: bloack;
+      }
+      a {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.9rem;
+      }
+
+      .span__position {
+        position: absolute;
+        margin-right: 10px;
+        padding: 0px 0 0 7px;
+      }
+    }
+  }
+}
