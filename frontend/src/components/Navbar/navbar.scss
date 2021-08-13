@@ -1,48 +1,164 @@
 @import "../../sass/abstracts/variables";
 
-.navbarcomponent {
-  border-bottom: 1px solid $color-orange-dark;
-  cursor: pointer;
-  background-color: $color-black;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  height: 50px;
-  color: $color-white;
+@media only screen and(min-width:560px) {
+  .navbarcomponent {
+    border-bottom: 1px solid $color-orange-dark;
+    cursor: pointer;
+    background-color: $color-black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    color: $color-white;
 
-  svg {
-    width: 1.5rem;
-    fill: $color-white;
-    font-size: 1.9rem;
-  }
+    &__toggle {
+      display: none;
+    }
 
-  &__menu {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin: 1rem;
+    svg {
+      width: 1.5rem;
+      fill: $color-white;
+      font-size: 1.9rem;
+    }
 
-    li {
-      list-style: none;
-      display: block;
-      position: relative;
-      left: 0;
+    &__checkbox {
+      display: none;
+    }
 
-      &:first-child {
-        margin-right: auto;
-        display: bloack;
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin: 1rem;
+
+      li {
+        list-style: none;
+        display: block;
+        position: relative;
+        left: 0;
+        color: $color-white;
+
+        &:first-child {
+          margin-right: auto;
+          display: block;
+        }
+        a {
+          text-decoration: none;
+          color: $color-white;
+          font-size: 1.9rem;
+        }
+
+        .span__position {
+          position: absolute;
+          margin-right: 10px;
+          padding: 0px 0 0 7px;
+        }
+
+        // adding width  and color to all svg icons
+        svg {
+          width: 1.5rem;
+          fill: $color-white;
+        }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbarcomponent {
+    border-bottom: 1px solid $color-orange-dark;
+    background-color: $color-black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    color: $color-white;
+
+    &__toggle {
+      position: absolute;
+      cursor: pointer;
+      margin: 0rem 1rem;
+      right: 0;
+
+      svg {
+        width: 1.5rem;
+        fill: $color-white;
+      }
+
+      .close {
+        display: none;
+      }
+
+      .menu {
+        margin-top: 0.2rem;
+      }
+    }
+
+    //hide checkbox
+    &__checkbox {
+      display: none;
+    }
+
+    //getting menu in the right position
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin: 1rem;
+
+      // now we are going to manipulate  li
+      li {
+        list-style: none;
+        //setting links  to invisible
+        display: none;
+
+        // taking a first element off link  and dislaying the logo with margin
+        &:first-child {
+          margin-right: auto;
+          display: block;
+        }
+      }
+
       a {
         text-decoration: none;
-        color: $color-white;
-        font-size: 1.9rem;
+        color: inherit;
+        font-size: 1.2rem;
       }
 
       .span__position {
         position: absolute;
         margin-right: 10px;
-        padding: 0px 0 0 7px;
+        padding: 3px 0 0 7px;
+      }
+
+      // adding width  and color to all svg icons
+      svg {
+        width: 1.5rem;
+        fill: $color-white;
       }
     }
+
+    .navbarcomponent__searchbox {
+      display: none;
+    }
+  }
+
+  // Toggle the hamburger menu in mobile view
+  #navbarcomponent__checkbox:checked ~ ul.navbarcomponent__menu li {
+    display: block;
+  }
+
+  //Change from menu to close icon on tap
+  #navbarcomponent__checkbox:checked ~ label.navbarcomponent__toggle .close {
+    display: block;
+    svg {
+      width: 1.5rem;
+      fill: $color-white;
+    }
+  }
+
+  #navbarcomponent__checkbox:checked ~ label.navbarcomponent__toggle .menu {
+    display: none;
   }
 }

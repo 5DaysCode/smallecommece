@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 
 const Product = ({ product }) => {
+  console.log("Products", product);
+
   return (
     <Card className="my-3 p-3 rounded">
       <Link to={`/product/${product._id}`}>
@@ -12,7 +14,6 @@ const Product = ({ product }) => {
         <Link to={`/product/${product._id}`}>
           <Card.Title as="div">
             <strong>{product.name}</strong>
-            
           </Card.Title>
         </Link>
         <Card.Text as="div"></Card.Text>
