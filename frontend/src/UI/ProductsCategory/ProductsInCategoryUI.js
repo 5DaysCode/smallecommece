@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Card } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
-import { listOfProductsInCategory } from "../redux/actions/productActions";
+import { listOfProductsInCategory } from "../../redux/actions/productActions";
 
 const ProductsInCategoryUI = ({ match, history }) => {
   const dispatch = useDispatch();
@@ -17,12 +17,15 @@ const ProductsInCategoryUI = ({ match, history }) => {
   }, [dispatch, match]);
 
   return (
-   
-   <>
+    <>
       {productsinCategory.map((product) => (
-        <Card className="my-3 p-3" style={{width: "30%"}}>
+        <Card className="my-3 p-3 mx-auto my-2" style={{ width: "30%" }}>
           <Link to={`/product/${product._id}`}>
-            <Card.Img  style={{width: "30%"}} src={product.image} variant="top" />
+            <Card.Img
+              style={{ width: "30%" }}
+              src={product.image}
+              variant="top"
+            />
           </Link>
           <Card.Body>
             <Link to={`/product/${product._id}`}>
@@ -36,7 +39,7 @@ const ProductsInCategoryUI = ({ match, history }) => {
           </Card.Body>
         </Card>
       ))}
-   </>
+    </>
   );
 };
 

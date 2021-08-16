@@ -38,8 +38,7 @@ const HomeUI = ({ match }) => {
       {/* {!keyword && <TopProductsCarousel />} */}
 
       <div className="homeuisection">
-        <h1>Our Categorys</h1>
-
+        <h1 className="homeuiheading__h1">Our Categorys</h1>
         <Row>
           {categorys.map((category) => (
             <Col key={category.name} className="btn-container">

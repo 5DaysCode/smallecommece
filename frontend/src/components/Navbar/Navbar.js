@@ -5,7 +5,7 @@ import EcommerceLogo from "../common/svgicons/svgnavbaricons/ecommercelogo";
 import Close from "../common/svgicons/svgnavbaricons/close";
 import Menu from "../common/svgicons/svgnavbaricons/menu";
 import Search from "../Search/Search";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,16 +26,16 @@ const Navbar = () => {
 
         <ul className="navbarcomponent__menu">
           <li>
-            <a>
+            <NavLink to="/" activeStyle={{ color: "white" }}>
               <EcommerceLogo />
               <span className="span__position">SmallEcommerce</span>
-            </a>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/" className="">
+            <NavLink to="/" activeStyle={{ color: "white" }}>
               Start
-            </Link>
+            </NavLink>
           </li>
 
           <li href="/">

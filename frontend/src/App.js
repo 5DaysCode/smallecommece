@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar.js";
 import Footer from "./components/Footer/Footer.js";
 
 import HomeUI from "./UI/HomeUI/HomeUI.js";
-import ProductsInCategoryUI from "./UI/ProductsInCategoryUI.js";
+import ProductsInCategoryUI from "./UI/ProductsCategory/ProductsInCategoryUI.js";
 import ProductUI from "./UI/ProductUI.js";
 
 import "../src/sass/main.scss";

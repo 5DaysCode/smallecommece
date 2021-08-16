@@ -10,8 +10,8 @@ const ProductCategory = ({ category, history }) => {
   return (
     <>
       <Container>
-        <Row>
-          <Col className=".col-xs-6 .col-sm-3">
+        <Col className=".col-xs-6 .col-sm-3">
+          <div className="category-row">
             <div class="category-box">
               <h3 class="heading-tertiary u-margin-bottom-small">
                 <div className="link-p">
@@ -22,8 +22,8 @@ const ProductCategory = ({ category, history }) => {
               </h3>
               <p class="feature-box__text"></p>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </Col>
       </Container>
     </>
   );
