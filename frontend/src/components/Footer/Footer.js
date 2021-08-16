@@ -4,14 +4,14 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <>
-      <footer class="mainfooter" role="contentinfo">
-        <div class="footer-middle">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-pad">
+      <footer className="mainfooter" role="contentinfo">
+        <div className="footer-middle">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-pad">
                   <h4>Customer Service</h4>
-                  <ul class="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>
                       <a href="#"></a>
                     </li>
@@ -33,10 +33,10 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-pad">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-pad">
                   <h4>About us</h4>
-                  <ul class="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>
                       <a href="#">About SmallEcommerce</a>
                     </li>
@@ -52,10 +52,10 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-pad">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-pad">
                   <h4>Account</h4>
-                  <ul class="list-unstyled">
+                  <ul className="list-unstyled">
                     <li>
                       <a href="#">Login</a>
                     </li>
@@ -72,25 +72,25 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div className="col-md-3">
                 <h4>Follow Us</h4>
                 <ul class="social-network social-circle">
                   <li>
-                    <a href="#" class="icoFacebook" title="Facebook">
+                    <a href="#" className="icoFacebook" title="Facebook">
                       <i class="fab fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="icoLinkedin" title="Linkedin">
-                      <i class="fab fa-linkedin"></i>
+                    <a href="#" className="icoLinkedin" title="Linkedin">
+                      <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 copy">
-                <p class="text-center">
+            <div className="row">
+              <div className="col-md-12 copy">
+                <p className="text-center">
                   &copy; Copyright 2021 - SmallEcommerce. All rights reserved.
                 </p>
               </div>

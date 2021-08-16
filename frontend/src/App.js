@@ -17,11 +17,8 @@ function App() {
     <Router>
       <>
         <Navbar />
-        <Video />
+        {/* <Video /> */}
 
-        {/* <Video></Video> */}
-
-        {/* <Header /> */}
         <main className="py-3">
           <Container fluid>
             <Route path="/" component={HomeUI} exact />

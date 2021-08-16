@@ -60,6 +60,13 @@
           fill: $color-white;
         }
       }
+      .reactlink {
+        list-style: none;
+        display: block;
+        position: relative;
+        left: 0;
+        color: $color-white;
+      }
     }
   }
 }

@@ -5,6 +5,7 @@ import EcommerceLogo from "../common/svgicons/svgnavbaricons/ecommercelogo";
 import Close from "../common/svgicons/svgnavbaricons/close";
 import Menu from "../common/svgicons/svgnavbaricons/menu";
 import Search from "../Search/Search";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -31,9 +32,12 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li href="/">
-            <a>Start</a>
+          <li>
+            <Link to="/" className="">
+              Start
+            </Link>
           </li>
+
           <li href="/">
             <a> About</a>
           </li>
