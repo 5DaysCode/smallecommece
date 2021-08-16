@@ -17,7 +17,7 @@ function App() {
     <Router>
       <>
         <Navbar />
-        {/* <Video /> */}
+        <Video />
 
         <main className="py-3">
           <Container fluid>
