@@ -10,12 +10,17 @@ import ProductsInCategoryUI from "./UI/ProductsInCategoryUI.js";
 import ProductUI from "./UI/ProductUI.js";
 
 import "../src/sass/main.scss";
+import Video from "./components/Video/Video.js";
 
 function App() {
   return (
     <Router>
       <>
         <Navbar />
+        <Video />
+
+        {/* <Video></Video> */}
+
         {/* <Header /> */}
         <main className="py-3">
           <Container fluid>
