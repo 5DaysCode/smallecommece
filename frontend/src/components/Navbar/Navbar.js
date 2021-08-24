@@ -5,9 +5,18 @@ import EcommerceLogo from "../common/svgicons/svgnavbaricons/ecommercelogo";
 import Close from "../common/svgicons/svgnavbaricons/close";
 import Menu from "../common/svgicons/svgnavbaricons/menu";
 import Search from "../Search/Search";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const Navbar = () => {
+
+
+
+
+ const Navbar = () => {
+  
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
+ 
   return (
     <>
       <nav className="navbarcomponent">
@@ -47,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
           <NavLink to="/cart">
-               <i className="fas fa-shopping-cart"></i>
+               <i className="fas fa-shopping-cart">{cartItems.length}</i>
             </NavLink>
           </li>
           
