@@ -26,9 +26,15 @@ const CartScreen = ({match, location, history}) => {
      //getting cart from the store
      const cart = useSelector((state) => state.cart);
      const {cartItems } = cart;
+     
 
+     useEffect(() => {
+        if(productId){
+              dispatch(addToCart(productId, qty));
+        }
+     }, [dispatch, productId, qty])  
     
-     return(
+return(
            <>
   <Row>
       <Col md={8}>
