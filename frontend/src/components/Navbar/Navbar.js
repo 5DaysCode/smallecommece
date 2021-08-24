@@ -32,15 +32,9 @@ const Navbar = () => {
             </NavLink>
           </li>
 
+        
           <li>
-          <NavLink to="/cart">
-               <i className="fas fa-shopping-cart"></i>
-            </NavLink>
-          </li>
-          <li>
-            
-         
-            <NavLink to="/" activeStyle={{ color: "white" }}>
+             <NavLink to="/" activeStyle={{ color: "white" }}>
               Start
             </NavLink>
           </li>
@@ -51,6 +45,12 @@ const Navbar = () => {
           <li href="/">
             <a> Contact</a>
           </li>
+          <li>
+          <NavLink to="/cart">
+               <i className="fas fa-shopping-cart"></i>
+            </NavLink>
+          </li>
+          
           <div className="navbarcomponent__searchbox">
             <Route
               render={({ history }) => <Search history={history} />}
