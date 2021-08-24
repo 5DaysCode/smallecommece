@@ -33,6 +33,13 @@ const Navbar = () => {
           </li>
 
           <li>
+          <NavLink to="/cart">
+               <i className="fas fa-shopping-cart"></i>
+            </NavLink>
+          </li>
+          <li>
+            
+         
             <NavLink to="/" activeStyle={{ color: "white" }}>
               Start
             </NavLink>
