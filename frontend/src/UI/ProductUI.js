@@ -27,8 +27,8 @@ const ProductUI = ({ match, history }) => {
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    //history.push(`/cart/${match.params.id}?qty=${qty}`);
-    toast.success("You have been added your product to Cart!");
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+    // toast.success("You have been added your product to Cart!");
   };
 
   return (
