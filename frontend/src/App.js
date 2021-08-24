@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer.js";
 import HomeUI from "./UI/HomeUI/HomeUI.js";
 import ProductsInCategoryUI from "./UI/ProductsCategory/ProductsInCategoryUI.js";
 import ProductUI from "./UI/ProductUI.js";
+import CartUI from "./UI/Cart/CartUI";
 
 import "../src/sass/main.scss";
 import Video from "./components/Video/Video.js";
@@ -23,7 +24,9 @@ function App() {
           <Container fluid>
             <Route path="/" component={HomeUI} exact />
             <Route path="/search/:keyword" component={HomeUI} />
-            <Route path="/product/:id" component={ProductUI} />
+            <Route path="/product/:id" component={ProductUI} />  
+            <Route path="/cart/:id?" component={CartUI} />
+            
             <Route
               path="/category/:categoryKeyword"
               component={ProductsInCategoryUI}

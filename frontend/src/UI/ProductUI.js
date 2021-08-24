@@ -20,15 +20,15 @@ const ProductUI = ({ match, history }) => {
 
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
-  const { loading, error, product } = productDetails;
+  const { product } = productDetails;
 
   useEffect(() => {
     dispatch(listProductsDetails(match.params.id));
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    //history.push(`/cart/${match.params.id}?qty=${qty}`);
-    toast.success("You have been added your product to Cart!");
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+    // toast.success("You have been added your product to Cart!");
   };
 
   return (
