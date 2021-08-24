@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { listProductsDetails } from "../redux/actions/productActions";
-import toast, { Toaster } from 'react-hot-toast';
+// import toast, { Toaster } from 'react-hot-toast';
 
 import { Link } from "react-router-dom";
 import {
@@ -37,7 +37,7 @@ const ProductUI = ({ match, history }) => {
         Go back
       </Link>
       <div>
-        <Toaster position="top-right"  reverseOrder={false}/>
+        {/* <Toaster position="top-right"  reverseOrder={false}/> */}
       </div>
       <Row>
         <Col md={6}>
@@ -99,7 +99,7 @@ const ProductUI = ({ match, history }) => {
 
               <ListGroup.Item>
                 <Button
-                  onClick={addToCartHandler}
+                   onClick={addToCartHandler}
                   className="btn-block"
                   type="button"
                   disabled={product.countInStock === 0}
