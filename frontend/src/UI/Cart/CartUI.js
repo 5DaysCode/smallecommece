@@ -26,14 +26,18 @@ const CartScreen = ({match, location, history}) => {
      //getting cart from the store
      const cart = useSelector((state) => state.cart);
      const {cartItems } = cart;
-     
-
+    
      useEffect(() => {
         if(productId){
               dispatch(addToCart(productId, qty));
         }
      }, [dispatch, productId, qty])  
-    
+      
+    const removeFromCartHandler = (id) => {
+          dispatch(removeFromCart(id));
+    }
+  
+
 return(
            <>
   <Row>
@@ -72,7 +76,8 @@ return(
                     <Button
                       type="button"
                       variant="light"
-                    
+                      onClick={() => removeFromCartHandler(item.product)}
+                       
                     >
                       <i className="fas fa-trash"></i>
                     </Button>
