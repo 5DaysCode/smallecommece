@@ -20,7 +20,7 @@ const ProductUI = ({ match, history }) => {
 
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
-  const { loading, error, product } = productDetails;
+  const { product } = productDetails;
 
   useEffect(() => {
     dispatch(listProductsDetails(match.params.id));
