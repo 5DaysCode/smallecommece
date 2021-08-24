@@ -13,17 +13,35 @@ import {
 } from "./redux/reducers/productReducers";
 import { categoryListReducer } from "./redux/reducers/categoryReducers";
 
+import {cartReducer} from "./redux/reducers/cartReducer";
 
 
+// Combining all reducers  whitch we are needed... 
 const reducer = combineReducers({
   productList: productListReducer,
   categoryList: categoryListReducer,
   productDetails: productDetailsReducer,
   productsInCategoryList: productListinCategoryReducer,
-  topRatedProducts: productTopRatedReducer
+  topRatedProducts: productTopRatedReducer,
+  cart: cartReducer,
 });
 
-const initialState = {};
+
+
+
+//Initializing objects from storage
+const cartItemsFromStorage = localStorage.getItem("cartItems")
+  ? JSON.parse(localStorage.getItem("cartItems"))
+  : [];
+
+
+
+const initialState = {
+    cart:{
+       cartItems:cartItemsFromStorage,
+    },
+};
+//////////////////////////////////////////////////////////
 const middleware = [thunk];
 
 //creating store
