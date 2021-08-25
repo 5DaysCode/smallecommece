@@ -1,7 +1,7 @@
 {
   "name": "ecommerce",
   "version": "1.0.0",
-  "description": "MERN  Shopping cart",
+  "description": "smallecommece",
   "main": "server.js",
   "type": "module",
   "scripts": {
