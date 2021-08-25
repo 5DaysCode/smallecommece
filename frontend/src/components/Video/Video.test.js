@@ -5,7 +5,6 @@ import {shallow} from 'enzyme';
 import Video from './Video';
 
 
-
 test('button have a right initial and end text' , () => {
 
  render(<Video />);
@@ -18,8 +17,7 @@ test('button have a right initial and end text' , () => {
   //expect the button text to be changed
   expect(colorButton.textContent).toBe('Sorry this function is not implemented');
   
- 
-});
+ });
 
 
 
