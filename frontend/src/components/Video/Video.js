@@ -1,6 +1,12 @@
 import "./video.scss";
+import {useState} from 'react';
+
 
 const Video = () => {
+ 
+  const[buttonText , setButtonText] = useState('Discover popular products');
+  const changeButtonText = (text) => setButtonText(text);
+ 
   return (
     <>
       <div className="videocontainer">
@@ -14,8 +20,8 @@ const Video = () => {
             <a className="description">
               SmallEcommerce for people who know's what is Quality!
             </a>
-            <div class="u-center-text u-margin-top-huge">
-              <button class="video-button">Discover popular products</button>
+            <div className="u-center-text u-margin-top-huge">
+              <button  onClick={() => changeButtonText('Sorry this function is not implemented') } className="video-button">{buttonText}</button>
             </div>
           </div>
         </div>
