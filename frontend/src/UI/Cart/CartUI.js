@@ -11,9 +11,10 @@ import {
       Card,
       
 } from "react-bootstrap";
-
+ 
 
 import { addToCart, removeFromCart } from "../../redux/actions/cartActions";
+import CartSummaryForm from "./CartSummaryForm";
 
 const CartScreen = ({match, location, history}) => {
      
@@ -100,14 +101,15 @@ return(
              0:-  SKR
             </ListGroup.Item>
             <ListGroup.Item>
-              <Button
+              {/* <Button
                 type="button"
                 className="btn-block"
                 disabled={cartItems.length === 0}
               
               >
                 Proceed To Checkout
-              </Button>
+              </Button> */}
+              <CartSummaryForm/>
             </ListGroup.Item>
           </ListGroup>
         </Card>

@@ -3,7 +3,7 @@ import React , {useState} from  'react';
 import Form from  'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Popover from 'react-bootstrap/Popover';
-import  OverlayTrigger  from 'react-bootstrap/OverlayTrigger';
+import OverlayTrigger  from 'react-bootstrap/OverlayTrigger';
 
 
 
@@ -14,7 +14,9 @@ export default function CartSummaryForm() {
     
     const popover = (
         <Popover id="termsandconditions-popover">
-            Your Master Card is gonna be hijacked , dont push any off proceed buttons Ö) ... 
+           <Popover.Content>
+            Your Master Card is gonna be hijacked , dont push any off proceed buttons Ö) 
+            </Popover.Content>
         </Popover>
       );  
     
