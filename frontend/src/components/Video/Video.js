@@ -14,6 +14,9 @@ const Video = () => {
             <a className="description">
               SmallEcommerce for people who know's what is Quality!
             </a>
+            <div class="u-center-text u-margin-top-huge">
+              <button class="video-button">Discover popular products</button>
+            </div>
           </div>
         </div>
       </div>
