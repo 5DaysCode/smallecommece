@@ -13,7 +13,7 @@ import {
   CHOOSEN_CATEGORY_PRODUCTS_LIST_QUERY_SUCESS,
 } from "../constants/productsConstants";
 
-export const productListReducer = (state = { products: [] }, action) => {
+export const productListReducer = (state = { products: {} }, action) => {
   switch (action.type) {
     case PRODUCTS_LIST_QUERY:
       return { loading: true, products: [] };

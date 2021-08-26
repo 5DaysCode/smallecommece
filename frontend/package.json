@@ -47,6 +47,7 @@
     "@testing-library/dom": "^8.2.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/enzyme-adapter-react-16": "^1.0.6",
+    "axios-mock-adapter": "^1.20.0",
     "sass": "^1.38.1"
   }
 }
