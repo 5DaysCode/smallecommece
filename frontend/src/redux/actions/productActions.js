@@ -16,6 +16,19 @@ import {
 } from "../constants/productsConstants";
 
 
+/**
+ * @function correctListOffProducts
+ * @returns  { object } -Action object with type `PRODUCTS_LIST_QUERY_SUCESS` 
+ */
+
+export const actionTypes = {
+
+      CORRECT_LIST_PRODUCT_DATA: 'CORRECT_LIST_PRODUCT_DATA', 
+} 
+export function correctListOffProducts(){
+     return { type: actionTypes.CORRECT_LIST_PRODUCT_DATA }; 
+}
+
 
 export const listOfProducts = () => async (dispatch) => {
   try {
