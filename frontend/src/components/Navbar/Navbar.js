@@ -8,15 +8,10 @@ import Search from "../Search/Search";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
-
-
-
- const Navbar = () => {
-  
+const Navbar = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
- 
+
   return (
     <>
       <nav className="navbarcomponent">
@@ -41,9 +36,8 @@ import { useSelector } from "react-redux";
             </NavLink>
           </li>
 
-        
           <li>
-             <NavLink to="/" activeStyle={{ color: "white" }}>
+            <NavLink to="/" activeStyle={{ color: "white" }}>
               Start
             </NavLink>
           </li>
@@ -55,11 +49,15 @@ import { useSelector } from "react-redux";
             <a> Contact</a>
           </li>
           <li>
-          <NavLink to="/cart">
-               <i className="fas fa-shopping-cart">{cartItems.length}</i>
+            <NavLink to="/cart">
+              <i className="fas fa-shopping-cart">
+                {cartItems.length ? (
+                  <span className="dot">{cartItems.length}</span>
+                ) : null}
+              </i>
             </NavLink>
           </li>
-          
+
           <div className="navbarcomponent__searchbox">
             <Route
               render={({ history }) => <Search history={history} />}

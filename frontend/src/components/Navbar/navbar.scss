@@ -1,7 +1,6 @@
 @import "../../sass/abstracts/variables";
 @import "../../sass/base/typographi";
 
-
 @media only screen and(min-width:560px) {
   .navbarcomponent {
     border-bottom: 1px solid $color-orange-dark;
@@ -12,7 +11,6 @@
     top: 0;
     height: 50px;
     color: $color-white;
-  
 
     &__toggle {
       display: none;
@@ -64,13 +62,21 @@
           width: 1.5rem;
           fill: $color-white;
         }
-      }
-      .reactlink {
-        list-style: none;
-        display: block;
-        position: relative;
-        left: 0;
-        color: $color-white;
+
+        .dot {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          border: 1px solid $color-white;
+          border-radius: 10px;
+          background-color: $color-orange-dark;
+          color: $color-white;
+          top: 4px;
+          left: 15px;
+          text-align: center;
+          font-size: 10px;
+          line-height: 16px;
+        }
       }
     }
   }

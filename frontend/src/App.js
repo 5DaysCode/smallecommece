@@ -24,9 +24,9 @@ function App() {
           <Container fluid>
             <Route path="/" component={HomeUI} exact />
             <Route path="/search/:keyword" component={HomeUI} />
-            <Route path="/product/:id" component={ProductUI} />  
+            <Route path="/product/:id" component={ProductUI} />
             <Route path="/cart/:id?" component={CartUI} />
-            
+
             <Route
               path="/category/:categoryKeyword"
               component={ProductsInCategoryUI}
