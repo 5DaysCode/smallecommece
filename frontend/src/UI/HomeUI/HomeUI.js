@@ -13,21 +13,18 @@ import "./homeui.scss";
 
 const HomeUI = ({ match }) => {
   const keyword = match.params.keyword;
+  console.log('Keyword' , keyword);
   const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.productList);
-  const { loading, error, products } = productList;
+  const { products } = productList;
 
-  const productListInCategory = useSelector(
-    (state) => state.productsInCategoryList
-  );
-  const { productsInCategory } = productListInCategory;
 
   const categoryList = useSelector((state) => state.categoryList);
   const { categorys } = categoryList;
 
   useEffect(() => {
-    dispatch(listOfProducts(keyword));
+    dispatch(listOfProducts());
 
     dispatch(listOfCategorys());
   }, [dispatch, keyword]);

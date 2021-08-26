@@ -15,10 +15,12 @@ import {
   CHOOSEN_CATEGORY_PRODUCT_LIST_QUERY_FAIL,
 } from "../constants/productsConstants";
 
-export const listOfProducts = (keyword = "") => async (dispatch) => {
+
+
+export const listOfProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCTS_LIST_QUERY });
-    const { data } = await axios.get(`/api/products?keyword=${keyword}`);
+    const { data } = await axios.get(`/api/products`);
     console.log("Action", data);
     dispatch({
       type: PRODUCTS_LIST_QUERY_SUCESS,
@@ -34,6 +36,7 @@ export const listOfProducts = (keyword = "") => async (dispatch) => {
     });
   }
 };
+
 
 export const listProductsDetails = (id) => async (dispatch) => {
   try {
